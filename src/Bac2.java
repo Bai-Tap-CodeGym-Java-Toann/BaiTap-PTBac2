@@ -39,19 +39,18 @@ public class Bac2 {
 
         int a = arr[0];
         int b = arr[1];
-        int c = arr[2];
-        int d = arr[3];
+        int c = arr[2] - arr[3];
 
         double delta = b * b - 4 * a * c;
 
         if (delta < 0) {
             System.out.println("phương trình vô nghiệm");
-        }else if (delta == 0){
-            System.out.println("phương trình nhận nghiệm kép: x="+(-b)/(2*a));
-        }else {
+        } else if (delta == 0) {
+            System.out.println("phương trình nhận nghiệm kép: x=" + (-b) / (2 * a));
+        } else {
             System.out.println("phương trình có hai nghiệm");
-            System.out.println("x1 ="+(-b-Math.sqrt(delta)/(2*a)));
-            System.out.println("x2 ="+(-b+Math.sqrt(delta)/(2*a)));
+            System.out.println("x1 =" + (-b - Math.sqrt(delta) / (2 * a)));
+            System.out.println("x2 =" + (-b + Math.sqrt(delta) / (2 * a)));
         }
 
     }
